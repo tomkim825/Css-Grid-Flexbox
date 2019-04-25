@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body{
+	font-family: 'Work Sans', sans-serif;
+    font-size:5vmin;
+    font-weight: 300;
+    padding-top:1vh;
+    text-align:center;
+    text-decoration: none;
+    display: grid;
+}
+
+body:hover{
+    cursor: pointer;  
+}
+
+#intro{
+    font-size: 7vmin;
+    position: absolute;
+    display:block;
+    width:100%;
+    top: 17vh;
+}
+
+h4{
+    font-size: 1.8vmin;
+    padding: 0;
+    margin:0;
+}
+
+a,
+p{
+    font-size: 1.4vmin;
+    padding: 2px;
+    margin:2px;
+}
+
+.gifBox{
+    position:relative;
+}
+
+.gifInfo:hover{
+    border-radius: 2vmin;
+}
+span{
+    color:rgb(256,0,0,0.25);
+    border:1px solid rgb(256,0,0,0.25);
+    border-radius:1vmin;
+    padding: 0 1vmin;
+}
+span:hover{
+    color:white;
+    background:red;
+}
+a{
+    color:rgb(0,0,256,0.25);
+    border:1px solid rgb(0,0,256,0.25);
+    border-radius:1vmin;
+    padding: 0 1vmin;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+    background: blue;
+}
+
+img{
+    padding: 0;
+    max-width:100%;
+    height:33vmin;
+    max-height: 25vw;
+    object-fit: cover;
+    margin: 0 auto;
+    position:relative;
+    z-index: 2;
+}
+
+.gifBox:hover > .gifInfo{
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+}
+.gifBox:hover > body{
+    filter: saturate(0);
+}
+
+.gifInfo:hover,
+.gifBox:hover{
+    background: white;
+    object-fit: contain;
+    transform: scale(1.05);
+    position:relative;
+    z-index:98;
+    display:block;
+    border: 1px solid black;
+    filter: saturate(1);
+}
+
+nav{
+    background: rgba(0,0,0,0.8);
+}
+
+
+.description{
+    text-align: center;
+    display:block;
+    color: white;
+    height: 10vmin;
+    border-top-left-radius: 2vmin;
+    border-top-right-radius: 2vmin;
+}
+
+.rowGif{
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+}
+
+
+.row{
+    border: 1px solid black;
+    margin: 0 1vmin;
+}
